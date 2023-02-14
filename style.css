@@ -50,11 +50,13 @@ img {
     letter-spacing: 5px;
     font-size: 0.75rem;
     margin-bottom: 10px;
-
 }
 
 h1 {
+    color: var(--dark-blue);
     font-family: 'Fraunces', serif;
+    line-height: 105%;
+    margin-bottom: 20px;
 }
 
 p {
