@@ -28,13 +28,13 @@ body {
 
 .container {
     background-color: var(--white);
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
-    width: 70%;
+    width: 350px;
 }
 
 main {
-    margin: 20px;
+    margin: 28px;
 }
 
 img {
@@ -56,12 +56,18 @@ h1 {
     color: var(--dark-blue);
     font-family: 'Fraunces', serif;
     line-height: 105%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     color: var(--dark-grayish-blue);
+    font-size: 14px;
+}
+
+.content {
+    line-height: 160%;
+    margin-bottom: 25px;
 }
 
 /* Footer */
