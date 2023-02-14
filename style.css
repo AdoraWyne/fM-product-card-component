@@ -30,7 +30,11 @@ body {
     background-color: var(--white);
     margin: 10px;
     border-radius: 10px;
-    width: 80%;
+    width: 70%;
+}
+
+main {
+    margin: 20px;
 }
 
 img {
@@ -39,6 +43,14 @@ img {
     object-fit: contain;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.sub-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+
 }
 
 h1 {
