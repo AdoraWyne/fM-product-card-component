@@ -28,21 +28,21 @@ body {
 
 .container {
     background-color: var(--white);
-    margin: 20px;
     border-radius: 10px;
+    margin: 20px;
     width: 350px;
+}
+
+header {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: 100%;
+    /* object-fit: contain; */
+    /* border-top-left-radius: 10px; */
+    /* border-top-right-radius: 10px; */
 }
 
 main {
     margin: 28px;
-}
-
-img {
-    max-width: 100%;
-    max-height: auto;
-    object-fit: contain;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .sub-title {
@@ -89,11 +89,16 @@ p {
 button {
     background-color: var(--dark-cyan);
     border: none;
+    border-radius: 5px;
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding: 10px;
     width: 100%;
+}
+
+button:hover {
+    background-color: var(--dark-blue);
 }
 
 .shopping-cart {
@@ -108,4 +113,25 @@ button {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 600px;
+        overflow: auto;
+    }
+
+    header {
+        background-image: url("./images/image-product-desktop.jpg");
+        background-size: 100%;
+        grid-column: 1/2;
+        object-fit: cover;
+    }
+
+    main {
+        grid-column: 2/3;
+    }
 }
