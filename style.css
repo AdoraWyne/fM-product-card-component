@@ -70,6 +70,22 @@ p {
     margin-bottom: 25px;
 }
 
+.price {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.sale-price {
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
 /* Footer */
 .attribution { 
     font-size: 15px; 
