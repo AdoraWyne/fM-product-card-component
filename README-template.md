@@ -21,11 +21,16 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Overview
 
 ### The challenge
+1. I did not how to change the image based on the screen size as desktop screen and mobile screen using different images.
 
-Users should be able to:
+Solution: I think I need to use background-image in CSS to insert the image but I'm not sure how. 
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+2. For the price container, after I made the sale-price's font size bigger, I'm not sure how to make the original-price stay align in the middle with the sale-price.
+
+Solution:
+
+3. How to add the svg icon?
+My initial approach was using <img> tag.
 
 ### Screenshot
 
@@ -45,6 +50,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+1. I built with the mobile version first and started my code from up to bottom: from the image to the button.
 
 ### Built with
 
@@ -53,11 +59,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
