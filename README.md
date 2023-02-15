@@ -2,55 +2,55 @@
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
 1. I did not how to change the image based on the screen size as desktop screen and mobile screen using different images.
 
-Solution: 
-Utilised ```<picture>```.
+  Solution: 
 
-When the screen is at least 600px long, it will change the image to the desktop version.
+  Utilised ```<picture>```.
 
-Understand more about [picture tag here](https://www.youtube.com/watch?v=Rik3gHT24AM&t=0s)
-```
-  <picture>
-    <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)">
-    <img src="images/image-product-mobile.jpg" alt="mobile pic">
-  </picture>
-```
+  When the screen is at least 600px long, it will change the image to the desktop version.
+  Understand more about [picture tag here](https://www.youtube.com/watch?v=Rik3gHT24AM&t=0s).
+  ```html
+    <picture>
+      <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)">
+      <img src="images/image-product-mobile.jpg" alt="mobile pic">
+    </picture>
+  ```
+
 
 2. For the price container, after I made the sale-price's font size bigger, I'm not sure how to make the original-price stay align in the middle with the sale-price.
 
-Solution: Duh. Solution is so easy!!! Only added ```align-items: center``` (I have already made price container a flexbox before this)
+  Solution: Duh. Solution is so easy!!! Only added ```align-items: center``` (I have already made price container a flexbox before this).
 
-3. How to add the svg icon?
-My initial approach was using <img> tag.
+3. How to add the svg icon? My initial approach was using <img> tag.
 
-### Screenshot
+  But I can do this:
 
-![](./screenshot.jpg)
+  On HTML:
+  ```html
+  <button data-icon="shopping-cart">Add to Cart</button>
+  ```
+
+  On CSS:
+
+  - Used pseudo code here, therefore need to use ```content: ''```.
+  - The width and height were given by the style guide.
+  ```css
+  button[data-icon="shopping-cart"]::before {
+    content: "";
+    background-image: url("images/icon-cart.svg");
+    width: 15px;
+    height: 16px;
+  }
+  ```
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Solution on Github](https://github.com/AdoraWyne/fM-product-card-component)
+- Live Site URL: [Live Site](https://adorawyne.github.io/fM-product-card-component/)
 
 ## My process
 1. I built with the mobile version first and started my code from up to bottom: from the image to the button.
