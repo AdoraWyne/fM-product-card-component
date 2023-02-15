@@ -10,12 +10,13 @@
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <!-- <img src="./images/image-product-mobile.jpg" alt="mobie pic"> -->
-      <div class="image-placeholder"></div>
-    </header>
-    <main>
+  <div class="container"> 
+    <picture>
+      <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)">
+      <img src="images/image-product-mobile.jpg" alt="mobile pic">
+    </picture>
+
+    <main> 
       <p class="sub-title">Perfume</p>
 
       <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -27,7 +28,7 @@
         <p class="original-price">$169.99</p>
       </div>
 
-      <button><img src="./images/icon-cart.svg" alt="shopping cart" class="shopping-cart">Add to Cart</button>
+      <button data-icon="shopping-cart">Add to Cart</button>
     </main>
   </div>
   <footer>
